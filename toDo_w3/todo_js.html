@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo_js</title>
+
+    <link rel="stylesheet" href="todo_js.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Task Tracker</h1>
+        <button class="btn btn-toggle-form">Add</button>
+      </header>
+      <form class="add-form">
+        <div class="form-control">
+          <label>Task</label>
+          <input id="taskName" type="text" placeholder="Add Task" value="" />
+        </div>
+        <div class="form-control">
+          <label>Day and Time</label>
+          <input
+            id="taskTime"
+            type="text"
+            placeholder="Add Day and Time"
+            value=""
+          />
+        </div>
+        <div class="form-control form-control-check">
+          <label>Set Reminder</label>
+          <input id="taskReminder" type="checkbox" value="false" />
+        </div>
+        <input
+          type="button"
+          class="btn btn-block"
+          value="Save Task"
+          onclick="newElement()"
+        />
+      </form>
+      <div class="task reminder">
+        <div class="task-content">
+          <h3>Task with Remider</h3>
+          <p>Remider time</p>
+        </div>
+        <div class="btn-delete-task">✕</div>
+      </div>
+      <div class="task">
+        <div class="task-content">
+          <h3>Task</h3>
+          <p>Time</p>
+        </div>
+        <div class="btn-delete-task">✕</div>
+      </div>
+    </div>
+
+    <script src="./todo_js.js"></script>
+  </body>
+</html>
